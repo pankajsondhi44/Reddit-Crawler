@@ -137,6 +137,8 @@ def Iterate(submissions_hot, targetSubreddit):
             lostcause(sub, targetSubreddit)
 
 def main():
+	if len(sys.argv) <= 1:
+		print("Usage:- python crawl.py <subreddit list separated by spaces>")
     if len(sys.argv) >= 2:
     	subred = sys.argv[2:]
     print('Instantiating reddit object...')
